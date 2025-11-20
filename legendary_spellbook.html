@@ -9,12 +9,17 @@
 	</head>
 	<body>
 		<header>
-			 <a href="home.html" class="logo"><img src="/images/Home/Lentell_BW_Identity_Mark_Favicon.png" alt="My Portfolio"></img></a>
+			 <a href="index.html" class="logo"><img src="/images/Home/Lentell_BW_Identity_Mark_Favicon.png" alt="My Portfolio"></img></a>
+			 <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 			<nav>
                 <ul>
-                    <li><a href="#" class="nav-link">📖 Legendary Spellbook</a></li>
-                    <li><a href="#" class="nav-link">📚 Veterans Resource Hub</a></li>
-                    <li><a href="#" class="nav-link">📄 Edreams.net</a></li>
+                    <li><a href="/legendary_spellbook.html" class="nav-link">📖 Legendary Spellbook</a></li>
+                    <li><a href="/veteran.html" class="nav-link">📚 Veterans Resource Hub</a></li>
+                    <li><a href="/edreams.html" class="nav-link">📄 Edreams.net</a></li>
                 </ul>
 			</nav>
 		</header>
@@ -23,19 +28,19 @@
 			<h1>Legendary Spellbook</h1>
 
 			<div class="hero-image">
-				<img src="spellbook-hero.jpg" alt="Spellbook Hero" />
+				<a href="https://lentellasu.github.io/Legendary-Spellbook/"><img src="/images/Spellbook/Spellbook_hero.png" alt="Spellbook Hero" /></a>
 				<div class="hero-info">
 					<div class="info-item">
 						<div class="label">Role</div>
-						<div class="value">Product Designer</div>
+						<div class="value">Brand+ UI/UX</div>
 					</div>
 					<div class="info-item">
 						<div class="label">Year</div>
-						<div class="value">2023</div>
+						<div class="value">2025</div>
 					</div>
 					<div class="info-item">
 						<div class="label">Deliverables</div>
-						<div class="value">Prototype, React App, Blog</div>
+						<div class="value">Logo, UI Kit, Web</div>
 					</div>
 				</div>
 			</div>
@@ -57,22 +62,22 @@
 
 			<div class="screenshots-grid">
 				<div class="screenshot">
-					<img src="spell-list.jpg" alt="Spell List Page" />
+					<img src="/images/Spellbook/Spellbook_page1.png" alt="Spell List Page" />
 					<p class="caption">Spell List Page</p>
 				</div>
 				<div class="screenshot">
-					<img src="create-spell.jpg" alt="Create Spell Page" />
+					<img src="/images/Spellbook/Spellbook_page2.png" alt="Create Spell Page" />
 					<p class="caption">Create Spell Page</p>
 				</div>
 				<div class="screenshot">
 					<img
-						src="spellbook-with-spells.jpg"
+						src="/images/Spellbook/Spellbook_page3.png"
 						alt="Spellbook Page with Spells"
 					/>
 					<p class="caption">Spellbook Page with Spells</p>
 				</div>
 				<div class="screenshot">
-					<img src="spellbook-empty.jpg" alt="Spellbook Page without Spells" />
+					<img src="/images/Spellbook/Spellbook_page4.png" alt="Spellbook Page without Spells" />
 					<p class="caption">Spellbook Page without Spells</p>
 				</div>
 			</div>
@@ -80,7 +85,7 @@
 			<section class="description">
 				<p>
 					This web app draws inspiration from fantasy RPGs like Dungeons &
-					Dragons and magical interfaces seen in games like Elder Ring, The
+					Dragons and magical interfaces seen in games like Elden Ring, The
 					Elder Scrolls, and Baldur's Gate. The visual design also nods to
 					classic illustrated grimoires that recall arcane tomes.
 				</p>
@@ -94,35 +99,26 @@
 
 			<section class="process">
 				<h2>Process / Solution</h2>
-				<div class="tech-stack">
-					<span class="tech-badge">HTML</span>
-					<span class="tech-badge">CSS</span>
-					<span class="tech-badge">JS</span>
-				</div>
-
 				<h3>Technologies Used:</h3>
-				<p>React was used for development, then full-stack...</p>
+				<p>React was used for development, then flattened to post to Github.</p>
 				<p>
-					Custom graphics including background image (open-spellbook-bg.jpg) and
-					SVG icons (default.svg), complemented by custom animation graphics for
-					feedback.
+					Custom graphics including background image (open-spellbook-bg.jpg) and SVG icons (default.svg), expandable with as many custom graphics as necessary.
 				</p>
 
 				<h3>Highlights:</h3>
 				<ul>
 					<li>
-						Created two animated magical orbs (hot and blue) using CSS
-						animations (-magic-orb1, -magic-orb2) that bounce across the scene
+						Created two animated magical orbs (red and blue) using CSS
+						animations (.magic-orb1, .magic-orb2) that bounce across the scene
 						asynchronously.
 					</li>
 					<li>
 						Designed layered glow and sparkle effects using box-shadow,
-						brightness() filters, and @keyframes tweening for elements like
-						spellbook spine, lightning-bug accents, and glowing flyouts.
+						brightness() filters, and @keyframes tweening for elements like .spellbook-glow, .lightning-ring, and .lightning-flash.
 					</li>
 					<li>
 						Integrated a parchment-style background with open-spellbook-bg.jpg
-						to simulate an ancient book, evoking the antique theme visually.
+						to simulate an ancient book, anchoring the entire theme visually.
 					</li>
 					<li>
 						Implemented lightning-style flashing animations using
@@ -144,14 +140,15 @@
 				</p>
 				<p>
 					The full project can be viewed on GitHub at
-					<a href="#">Legendary Spellbook</a>
+					<a href="https://lentellasu.github.io/Legendary-Spellbook/">Legendary Spellbook</a>
 				</p>
 			</section>
 
 			<div class="buttons">
-				<a href="#" class="btn">Process Document</a>
-				<a href="#" class="btn">View Live Project</a>
+				<a href="https://lentellasu.github.io/Legendary-Spellbook/" class="btn">View Live Project</a>
+				<a href="/index.html" class="btn">Return to Portfolio</a>
 			</div>
+			
 		</main>
 
 		<footer>
