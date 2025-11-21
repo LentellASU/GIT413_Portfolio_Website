@@ -79,7 +79,7 @@ header .logo2 {
     height: 64px;
     position: absolute;
     right: 0;
-    margin-right: 0;
+    padding-right: 0;
 }
 
 header nav ul{
