@@ -73,6 +73,14 @@ header .logo {
     position: absolute;
     left: 0;
 }
+
+header .logo2 {
+    width: 72px;
+    height: 64px;
+    position: absolute;
+    right: 0;
+}
+
 header nav ul{
     display: flex;
     justify-content: space-around;
@@ -172,7 +180,7 @@ footer p {
     color: var(--header-bg);
     padding: 0.2rem 1.5rem;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 11px;
 }
 footer .contact-item {
     background-color: var(--secondary-font);
@@ -563,7 +571,22 @@ section.process a {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-@media screen and (max-width: 768px) {
+/* Tablet styles (iPad) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    header nav li a {
+        padding: 0.5rem 1.5rem;
+        font-size: 14px;
+    }
+
+    header nav li a svg,
+    header nav li a i {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Phone styles */
+@media screen and (max-width: 768px)  {
     header {
         height: 64px;
         padding: 0;
@@ -573,6 +596,10 @@ section.process a {
         position: absolute;
         left: 1rem;
         margin: 0;
+    }
+
+    header .logo2 {
+        display: none;
     }
 
     .hamburger {
@@ -605,7 +632,7 @@ section.process a {
 
     header nav li a {
         padding: 0.75rem 1rem;
-        font-size: 16px;
+        font-size: 14px;
         display: block;
         width: 90%;
         margin: 0 auto;
@@ -620,7 +647,7 @@ section.process a {
     }
 
     footer p {
-        font-size: 11px;
+        font-size: 8px;
         padding: 0.2rem 0.75rem;
     }
 
@@ -712,7 +739,8 @@ section.process a {
     }
 
     header nav li a {
-        padding: 0.6rem 1rem;
+        padding: 0.2rem 0.5rem;
+        font-size: 16px;
     }
 
     .project img {
@@ -732,7 +760,7 @@ section.process a {
     }
 
     footer p {
-        font-size: 9px;
+        font-size: 6px;
         padding: 0.15rem 0.5rem;
     }
 
