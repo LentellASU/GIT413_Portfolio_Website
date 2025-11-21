@@ -255,6 +255,10 @@ section.projects {
     margin-right: 15px;
     margin-bottom: 15px;
 }
+.project button:hover {    
+    background-color: var(--secondary-button);
+    color: var(--primary-font);    
+}
 section.about {
     max-height: 413px;
     display: flex;
@@ -337,7 +341,11 @@ section.about {
     align-self: center;
     margin-top: -50px;
 }
-
+.view-work-btn:hover {
+    background-color: #7d7787;
+    color: var(--secondary-font);
+    
+}
 
 section.skills {
     max-height: 598px;
